@@ -4,3 +4,5 @@ Neceseraly info.
 If you have more tham 100 groups change "100" in lib for some bigger value.
 
 Redmine 4.0.*
+Default watchers
+Automaticaly adds group's users to watchers (everywhere).
