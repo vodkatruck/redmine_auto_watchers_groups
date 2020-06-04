@@ -7,4 +7,4 @@ Redmine 4.0.*
 
 "Default watchers"
 
-Automaticaly adds descfibed group's users as watchers (everywhere).
+Automaticaly adds described group's users as watchers (everywhere).
