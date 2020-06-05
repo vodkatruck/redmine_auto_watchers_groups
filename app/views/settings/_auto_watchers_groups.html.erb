@@ -11,6 +11,23 @@ selected ||= []
         :size => 25)
 %></p>
 
-<p><%= "Groups Id" %><%=
+<p><%= "Id - " %><%=
 		"#{@settings['groups_enabled']}"
+%></p>
+	
+<%-
+goles = Role.all.sort
+selected = [@settings['roles_enabled']].collect unless @settings['roles_enabled'].blank?
+selected ||= []
+-%>
+
+<p><%= content_tag(:label, l(:label_roles_enabled)) %><%=
+        select_tag("settings[roles_enabled]",
+        content_tag(:option, '') + options_from_collection_for_select(goles, :id, :name, selected ),
+        :multiple => true,
+        :size => 25)
+%></p>
+
+<p><%= "Id - " %><%=
+		"#{@settings['roles_enabled']}"
 %></p>
