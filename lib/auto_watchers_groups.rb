@@ -11,6 +11,7 @@ module AutoWatchersGroups
                         @issue = Issue.find context[:issue][:id]
                         Role.all.sort.each do |role|
                                 if @settings['roles_enabled'].include? "#{role.id}"
+                                        if role.id > 2
                                         role.members.each do |member|
                                                 if member.project_id = @issue.project_id
                                                         Group.all.sort.each do |group|
