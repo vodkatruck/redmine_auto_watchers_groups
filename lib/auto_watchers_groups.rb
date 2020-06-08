@@ -24,7 +24,6 @@ module AutoWatchersGroups
                                                         end
                                                 end
                                         end
-                                        end
                                 end
                         end
                 end
