@@ -2,7 +2,7 @@
 
 U chose group and role. If some users in some projects have this role and member of this group, he'll suffer from becoming a watcher of every issue (except thous that unchanged).
 
-Redmine 4.0.*
+Redmine 4.0.* and more if syntax woud not change much. Юз ит иф ю брейв энаф :333
 
 "Default watchers"
 
