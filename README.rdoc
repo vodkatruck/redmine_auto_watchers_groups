@@ -6,4 +6,4 @@ Redmine 4.0.* and more if syntax woud not change much. Юз ит иф ю бре�
 
 "Default watchers"
 
-Automatically adds chosen group's users as watchers if they have chosen roles in projects.
+Automatically adds chosen group's or/and riole's users as watchers.
