@@ -25,9 +25,15 @@ module AutoWatchersGroups
                                                                     end
                                                             end
                                                         else
-                                                                                            user = User.find member.user_id
+                                                            Group.all.sort.each do |group|
+                                                                    
+                                                                            group.users.each do |user|
+                                                                                    if member.user_id == user.id
                                                                                             Watcher.create(:watchable => @issue, :user => user)
-                                                                                    
+                                                                                    end
+                                                                            end
+                                                                    
+                                                            end                       
                                                         end
                                                     end
                                             end
@@ -48,5 +54,4 @@ module AutoWatchersGroups
         end
 
 end
-
 
